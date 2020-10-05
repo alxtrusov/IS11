@@ -1,21 +1,29 @@
-// выстрелить в круглую мишень
-function shotToRound(x, y) {
-    return Math.sqrt(x*x + y*y) <= 1;
+// получить массив из поля ввода
+function getArray() {
+    var strArray = document.getElementById('array').value;
+    if (strArray) {
+        var arr = strArray.split(' ');
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] -= 0;
+        }
+        return arr;
+    }
+    return [];
 }
 
-// получить координату из инпута по его id
-function getCoord(id) {
-    return document.getElementById(id).value - 0;
+// вывести массив на экран
+function printArray(arr) {
+    document.getElementById('array').value = arr.join(' ');
 }
 
-// вывести результат стрельбы на экран
-function printShotResult(result) {
-    var text = (result) ? "Ты попал (на ТВ)" : "Ты промазал!";
-    document.getElementById('shotResult').innerHTML = text;
+// отсортировать массив
+function sortArray() {
+    var arr = getArray();
+    arr.sort(function(a, b) {
+        return a - b;
+    });
+    printArray(arr);
 }
 
-// обработчик нажатия на кнопку
-var shotToRoundButton = document.getElementById('shotToRound');
-shotToRoundButton.addEventListener('click', function() {
-    printShotResult(shotToRound(getCoord('x'), getCoord('y')));
-});
+// повесить обработчики на кнопки
+document.getElementById('sortArray').addEventListener('click', sortArray);
