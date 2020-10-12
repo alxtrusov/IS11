@@ -1,29 +1,19 @@
-// получить массив из поля ввода
-function getArray() {
-    var strArray = document.getElementById('array').value;
-    if (strArray) {
-        var arr = strArray.split(' ');
-        for (var i = 0; i < arr.length; i++) {
-            arr[i] -= 0;
-        }
-        return arr;
+window.onload = function() {
+    var input = document.getElementById('input');
+    var clear = document.getElementById('clear');
+    var numbers = document.getElementsByClassName('number');
+
+    for (var i = 0; i < numbers.length; i++) {
+        numbers[i].addEventListener('click', function() {
+            if (input.value === '0') {
+                input.value = this.innerHTML;
+            } else {
+                input.value += this.innerHTML;
+            }
+        });
     }
-    return [];
-}
 
-// вывести массив на экран
-function printArray(arr) {
-    document.getElementById('array').value = arr.join(' ');
-}
-
-// отсортировать массив
-function sortArray() {
-    var arr = getArray();
-    arr.sort(function(a, b) {
-        return a - b;
+    clear.addEventListener('click', function() {
+        input.value = 0;
     });
-    printArray(arr);
-}
-
-// повесить обработчики на кнопки
-document.getElementById('sortArray').addEventListener('click', sortArray);
+};
