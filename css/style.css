@@ -1,0 +1,20 @@
+.over {
+    border-radius: 10px;
+    border: solid blue 2px;
+    position: absolute;
+    background-color: blueviolet;
+    top: 50px;
+    left: 50px;
+    width: 250px;
+    height: 250px;
+    opacity: 0.6;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+#addFunction {
+    margin-bottom: 10px;
+}

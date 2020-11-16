@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Графики 2D</title>
-	<script src="js/Graph.js"></script>
-	<script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Confeta Fruct</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/graph/Graph.js"></script>
+    <script src="js/ui/UI.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-   <canvas id="canvas"></canvas>
+    <div>
+        <button id="showHide">Скрыть/Показать</button>
+    </div>
+    <div class="over hide">
+        <button id="addFunction">Добавить функцию</button>
+        <div id="funcs"></div>
+    </div>
+    <canvas width="500" height="500" id="canvas"></canvas>
 </body>
 </html>
