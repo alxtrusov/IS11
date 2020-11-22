@@ -21,6 +21,10 @@ window.onload = function() {
         input.value = calculator.clear();
     });
 
+
+
     console.log(1111);
+     var a = 891;  
+    
     console.log(1231322, 'jhgsdfjghsf');
 };
