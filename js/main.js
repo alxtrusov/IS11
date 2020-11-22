@@ -20,4 +20,6 @@ window.onload = function() {
     clear.addEventListener('click', function() {
         input.value = calculator.clear();
     });
+
+    console.log(1231322);
 };
