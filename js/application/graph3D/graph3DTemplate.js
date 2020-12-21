@@ -1,0 +1,1 @@
+Template.prototype.graph3DTemplate = () => `Это графика 3D`;
