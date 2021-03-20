@@ -1,1 +1,0 @@
-class Graph3D extends Component {}
