@@ -1,5 +1,5 @@
 class Graph {
-    constructor({ id, width = 300, height = 300, WINDOW = {}, callbacks }) {
+    constructor({ id, width = 300, height = 300, WINDOW = {}, callbacks = {} }) {
         this.WINDOW = WINDOW;
         this.canvas;
         if (id) {
