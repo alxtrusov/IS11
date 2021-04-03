@@ -1,5 +1,6 @@
 class Subject {
-    constructor(points = []) {
+    constructor(points = [], edges = []) {
         this.points = points;
+        this.edges = edges;
     }
 }

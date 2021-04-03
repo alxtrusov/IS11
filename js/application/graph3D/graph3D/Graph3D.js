@@ -1,6 +1,7 @@
 class Graph3D {
     constructor({ WINDOW }) {
         this.WINDOW = WINDOW;
+        this.math = new Math3D;
     }
 
     xs(point) {
@@ -14,5 +15,13 @@ class Graph3D {
         const z0 = this.WINDOW.CAMERA.z;
         const y0 = this.WINDOW.CAMERA.y;
         return (point.y - y0) / (point.z - z0) * (zs - z0) + y0;
+    }
+
+    zoom(delta, point) {
+        this.math.zoom(delta, point);
+    }
+
+    rotateOy(alpha, point) {
+        this.math.rotateOy(alpha, point);
     }
 }
