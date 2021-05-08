@@ -1,6 +1,0 @@
-[1026/084726.704:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
-[1116/085837.560:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
-[1214/083314.095:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
-[1221/083818.851:ERROR:settings.cc(320)] Settings magic is not 1129342067
-[1221/084819.103:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
-[0313/124218.936:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\student\AppData\Local\Google\Chrome\User Data\Crashpad\reports\465105e1-59c4-4865-82c7-13e538de4459.dmp: Процесс не может получить доступ к файлу, так как этот файл занят другим процессом. (0x20)
